@@ -12,5 +12,6 @@
   "prettier.tabWidth": 2,
 
   // 명령문 끝에 세미콜론 사용
-  "prettier.semi": true
+  "prettier.semi": true,
+  "cSpell.words": ["nestjs", "websockets"]
 }
