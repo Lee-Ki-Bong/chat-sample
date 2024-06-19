@@ -22,8 +22,8 @@ export class ChatGateway {
 
   @SubscribeMessage('message')
   // handleMessage(client: any, payload: any): void {} // 이렇게도 가능.
-  handleMessage(@MessageBody() message: string): string {
-    // this.server.emit('message', message);
-    return message;
+  handleMessage(@MessageBody() message: string): void {
+    // console.log(`ChatGateway`, message);
+    this.server.emit('message', message);
   }
 }

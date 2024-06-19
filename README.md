@@ -17,3 +17,16 @@ yarn add -D @types/socket.io
 ```
 nest g gateway chat --no-spec
 ```
+
+## step 3
+
+### 통신 클라이언트
+
+```
+mkdir socket-client
+```
+
+- index.html 생성
+- chat-socket.js 생성
+- be 에 main.ts cors 처리
+- gateway 에 this.server.emit('message', message); 수정
